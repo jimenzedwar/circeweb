@@ -1,0 +1,202 @@
+[
+  {
+    "id": "amor",
+    "nombre": "Amor",
+    "corto": "Amor",
+    "motivo": "corazon",
+    "palabra": "amor",
+    "descripcion": "Rituales sencillos y progresivos para atraer, endulzar y acercar a esa persona.",
+    "sinonimos": [
+      "amor",
+      "pareja",
+      "enamorar",
+      "novio",
+      "novia",
+      "esposo",
+      "esposa",
+      "relacion",
+      "ex",
+      "regrese",
+      "volver",
+      "infiel",
+      "celos"
+    ],
+    "orden": 0
+  },
+  {
+    "id": "amarres",
+    "nombre": "Amarres",
+    "corto": "Amarres",
+    "motivo": "amarre",
+    "palabra": "una unión firme",
+    "descripcion": "Los trabajos de unión más intensos del catálogo, para casos difíciles.",
+    "sinonimos": [
+      "amarre",
+      "amarrar",
+      "atar",
+      "unir",
+      "union",
+      "matrimonio",
+      "casarse"
+    ],
+    "orden": 1
+  },
+  {
+    "id": "amorpropio",
+    "nombre": "Amor propio y belleza",
+    "corto": "Amor propio",
+    "motivo": "rosa",
+    "palabra": "reencontrarte contigo",
+    "descripcion": "Rituales para tu autoestima, tu brillo y tu magnetismo personal.",
+    "sinonimos": [
+      "amor propio",
+      "autoestima",
+      "belleza",
+      "bonita",
+      "atractiva",
+      "magnetismo",
+      "glow"
+    ],
+    "orden": 2
+  },
+  {
+    "id": "abundancia",
+    "nombre": "Abundancia y dinero",
+    "corto": "Abundancia",
+    "motivo": "monedas",
+    "palabra": "abundancia",
+    "descripcion": "Para que el dinero, los clientes y las oportunidades vuelvan a fluir.",
+    "sinonimos": [
+      "dinero",
+      "abundancia",
+      "prosperidad",
+      "negocio",
+      "clientes",
+      "ventas",
+      "trabajo",
+      "empleo",
+      "suerte",
+      "deudas",
+      "ingresos"
+    ],
+    "orden": 3
+  },
+  {
+    "id": "limpieza",
+    "nombre": "Limpiezas",
+    "corto": "Limpieza",
+    "motivo": "escoba",
+    "palabra": "limpiar tu energía",
+    "descripcion": "Para soltar cargas, bloqueos y energías que no te pertenecen.",
+    "sinonimos": [
+      "limpieza",
+      "limpiar",
+      "despojo",
+      "mal de ojo",
+      "envidia",
+      "brujeria",
+      "bloqueo",
+      "cargas",
+      "energia"
+    ],
+    "orden": 4
+  },
+  {
+    "id": "proteccion",
+    "nombre": "Protección",
+    "corto": "Protección",
+    "motivo": "escudo",
+    "palabra": "protección",
+    "descripcion": "Escudos para ti, tu trabajo, tu familia y tus mascotas.",
+    "sinonimos": [
+      "proteccion",
+      "proteger",
+      "blindaje",
+      "escudo",
+      "familia",
+      "mascota",
+      "acoso"
+    ],
+    "orden": 5
+  },
+  {
+    "id": "supremo",
+    "nombre": "Amor supremo",
+    "corto": "Supremo",
+    "motivo": "velas",
+    "palabra": "un trabajo de amor más fuerte",
+    "descripcion": "Trabajos combinados y potenciados para casos que piden más fuerza.",
+    "sinonimos": [
+      "supremo",
+      "potenciado",
+      "fuerte",
+      "combinado"
+    ],
+    "orden": 6
+  },
+  {
+    "id": "cortes",
+    "nombre": "Cortes y separación",
+    "corto": "Cortes",
+    "motivo": "tijeras",
+    "palabra": "cerrar un ciclo",
+    "descripcion": "Para romper lazos, soltar y tomar caminos distintos.",
+    "sinonimos": [
+      "separar",
+      "separacion",
+      "corte",
+      "soltar",
+      "olvidar",
+      "terminar",
+      "alejar"
+    ],
+    "orden": 7
+  },
+  {
+    "id": "velas",
+    "nombre": "Velas de refuerzo",
+    "corto": "Velas",
+    "motivo": "vela",
+    "palabra": "reforzar tu trabajo",
+    "descripcion": "Aceleran, refuerzan y revitalizan cualquier ritual.",
+    "sinonimos": [
+      "vela",
+      "velas",
+      "velita",
+      "velon",
+      "refuerzo",
+      "acelerar"
+    ],
+    "orden": 8
+  },
+  {
+    "id": "personalizado",
+    "nombre": "Rituales personalizados",
+    "corto": "A medida",
+    "motivo": "luna",
+    "palabra": "algo hecho a tu medida",
+    "descripcion": "Para situaciones únicas que no encajan en ningún ritual del catálogo.",
+    "sinonimos": [
+      "personalizado",
+      "a medida",
+      "especial",
+      "unico"
+    ],
+    "orden": 9
+  },
+  {
+    "id": "tarot",
+    "nombre": "Tarot",
+    "corto": "Tarot",
+    "motivo": "tarot",
+    "palabra": "respuestas",
+    "descripcion": "Todo trabajo de amor empieza con una lectura previa.",
+    "sinonimos": [
+      "tarot",
+      "lectura",
+      "cartas",
+      "consulta"
+    ],
+    "orden": 10
+  }
+]

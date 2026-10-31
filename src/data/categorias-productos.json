@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pociones",
+    "nombre": "Pócimas",
+    "orden": 0
+  },
+  {
+    "id": "pulseras",
+    "nombre": "Pulseras",
+    "orden": 1
+  },
+  {
+    "id": "amuletos",
+    "nombre": "Amuletos y cuarzos",
+    "orden": 2
+  }
+]

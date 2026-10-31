@@ -1,0 +1,127 @@
+{
+  "pares": [
+    [
+      "Endulzamiento",
+      "Endulzamiento supremo"
+    ],
+    [
+      "Retorno",
+      "Retorno completo"
+    ],
+    [
+      "Obsesión",
+      "Dulce obsesión"
+    ],
+    [
+      "Desespero sencillo",
+      "Desespero fuerte"
+    ],
+    [
+      "Separación",
+      "Separación suprema"
+    ],
+    [
+      "Blindaje energético",
+      "Blindaje supremo"
+    ],
+    [
+      "Abre camino laboral",
+      "Impulso laboral supremo"
+    ],
+    [
+      "Ritual de limpieza general",
+      "Limpieza y despojo supremo"
+    ],
+    [
+      "Vela de refuerzo",
+      "Vela de refuerzo VIP"
+    ],
+    [
+      "Velita potencializadora (amor propio)",
+      "Velita potencializadora suprema (amor propio)"
+    ],
+    [
+      "Velita potencializadora (abundancia)",
+      "Vela potencializadora suprema (abundancia)"
+    ],
+    [
+      "Velita potencializadora de limpieza",
+      "Velita potencializadora suprema (limpieza)"
+    ]
+  ],
+  "velaPara": {
+    "amor": "Vela de refuerzo",
+    "supremo": "Vela de refuerzo VIP",
+    "amarres": "Vela de refuerzo super VIP",
+    "cortes": "Vela de refuerzo",
+    "amorpropio": "Velita potencializadora (amor propio)",
+    "abundancia": "Velita potencializadora (abundancia)",
+    "limpieza": "Velita potencializadora de limpieza",
+    "proteccion": "Velita potencializadora de limpieza"
+  },
+  "situaciones": {
+    "amor": [
+      "Se alejó de mí",
+      "Hay otra persona",
+      "Quiero que regrese",
+      "Peleamos mucho",
+      "Quiero fortalecer la relación"
+    ],
+    "supremo": [
+      "Se alejó de mí",
+      "Hay otra persona",
+      "Quiero que regrese",
+      "Es un caso difícil"
+    ],
+    "amarres": [
+      "Quiero una unión firme",
+      "Hay otra persona",
+      "Quiero formalizar",
+      "Es un caso difícil"
+    ],
+    "cortes": [
+      "Quiero soltar a alguien",
+      "Quiero separar una relación",
+      "No puedo olvidar"
+    ],
+    "amorpropio": [
+      "Autoestima baja",
+      "Quiero brillar más",
+      "Quiero cerrar un ciclo"
+    ],
+    "abundancia": [
+      "Negocio lento",
+      "Busco empleo",
+      "Tengo deudas",
+      "Quiero un ascenso",
+      "Mala suerte con el dinero"
+    ],
+    "limpieza": [
+      "Siento mala energía",
+      "Creo que me hicieron un trabajo",
+      "Mala racha",
+      "Mi mascota está rara"
+    ],
+    "proteccion": [
+      "Siento envidia",
+      "Quiero proteger mi hogar",
+      "Quiero proteger mi trabajo",
+      "Me están haciendo daño"
+    ],
+    "general": [
+      "Es urgente",
+      "Es mi primera vez",
+      "Ya hice otro trabajo antes"
+    ]
+  },
+  "paises": [
+    "Colombia",
+    "Venezuela",
+    "México",
+    "Estados Unidos",
+    "España",
+    "Chile",
+    "Perú",
+    "Otro país"
+  ]
+}

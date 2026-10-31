@@ -1,0 +1,832 @@
+[
+  {
+    "clave": "garantia",
+    "pregunta": "¿Los trabajos tienen garantía?",
+    "respuesta": "Todo trabajo energético cuenta con una garantía de tres meses, siempre y cuando se haya realizado al menos una vela de refuerzo y haya actualizaciones constantes sobre el avance del trabajo. Si se cumplen estos requisitos y no se han visto resultados, haré otro ritual por mi cuenta. De lo contrario, no me hago responsable.",
+    "palabras_clave": [
+      "garantia",
+      "garantizado",
+      "si no funciona",
+      "resultados",
+      "seguro"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 0
+  },
+  {
+    "clave": "pago-adelantado",
+    "pregunta": "¿Cuándo se paga el trabajo?",
+    "respuesta": "Todo trabajo se paga por adelantado al momento de apartar tu cupo.",
+    "palabras_clave": [
+      "pago",
+      "pagar",
+      "adelantado",
+      "anticipo",
+      "cupo",
+      "apartar"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 1
+  },
+  {
+    "clave": "devoluciones",
+    "pregunta": "¿Hay devoluciones?",
+    "respuesta": "No hay devoluciones: todos los trabajos energéticos requieren un intercambio y, una vez realizado el pago, no hay devoluciones.",
+    "palabras_clave": [
+      "devolucion",
+      "reembolso",
+      "devolver dinero",
+      "cancelar"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "apenada",
+    "acciones": [],
+    "orden": 2
+  },
+  {
+    "clave": "tiempo-resultados",
+    "pregunta": "¿Cuánto tarda en funcionar un trabajo?",
+    "respuesta": "Cada trabajo tiene su propio tiempo de manifestación. Puede funcionar en dos días, como también en un mes o más. Todo depende de la energía con la que se esté trabajando y, si es para alguien más, de su carácter y disposición hacia ti. La magia es poderosa, pero no es un botón de control: la paciencia y la fe son clave para ver los mejores resultados.",
+    "palabras_clave": [
+      "cuanto tarda",
+      "tiempo",
+      "demora",
+      "cuando funciona",
+      "rapido",
+      "dias"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "mistica",
+    "acciones": [],
+    "orden": 3
+  },
+  {
+    "clave": "otro-brujo",
+    "pregunta": "¿Puedo hacer trabajos con otro brujo al mismo tiempo?",
+    "respuesta": "No mezcles energías con otro brujo ni intentes hacerte varios trabajos a la vez, porque las fuerzas chocan y pueden bloquear los resultados. Tampoco esperes que yo solucione de un día para otro lo que otro no pudo: la magia requiere paciencia y constancia.",
+    "palabras_clave": [
+      "otro brujo",
+      "otra bruja",
+      "varios trabajos",
+      "mezclar",
+      "otro trabajo"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "sorprendida",
+    "acciones": [],
+    "orden": 4
+  },
+  {
+    "clave": "energia-50-50",
+    "pregunta": "¿De qué depende que el ritual funcione?",
+    "respuesta": "El éxito de cualquier ritual depende en un 50 % de mi energía y en un 50 % de la tuya. Si buscas resultados inmediatos o actúas desde la ansiedad, la desesperación o la indecisión, el trabajo puede debilitarse o incluso no funcionar.",
+    "palabras_clave": [
+      "depende",
+      "ansiedad",
+      "dudas",
+      "funcione",
+      "energia"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "mistica",
+    "acciones": [],
+    "orden": 5
+  },
+  {
+    "clave": "sencillo-supremo",
+    "pregunta": "¿Qué diferencia hay entre un ritual sencillo y uno supremo?",
+    "respuesta": "Los rituales sencillos son trabajos energéticos progresivos que generan resultados de forma natural. Si buscas un trabajo más fuerte o potenciado, están los rituales supremos, que combinan varios trabajos en uno.",
+    "palabras_clave": [
+      "sencillo",
+      "supremo",
+      "diferencia",
+      "potenciado",
+      "mas fuerte"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 6
+  },
+  {
+    "clave": "lectura-previa",
+    "pregunta": "¿Necesito una lectura antes de un trabajo de amor?",
+    "respuesta": "Sí. Todo trabajo de amor requiere previa lectura para conocer y comprender a profundidad los sentimientos de la persona y la situación en la que se encuentran.",
+    "palabras_clave": [
+      "lectura previa",
+      "lectura antes",
+      "tarot antes",
+      "necesito lectura"
+    ],
+    "aplica_a": [
+      "general",
+      "seccion:amor",
+      "seccion:supremo",
+      "seccion:amarres",
+      "seccion:tarot"
+    ],
+    "emocion": "mistica",
+    "acciones": [
+      {
+        "tipo": "catalogo",
+        "etiqueta": "Ver tarot",
+        "seccion": "tarot"
+      }
+    ],
+    "orden": 7
+  },
+  {
+    "clave": "progresivo",
+    "pregunta": "¿Los trabajos de amor cambian a la persona de inmediato?",
+    "respuesta": "Los trabajos avanzan de manera progresiva según el carácter y la disposición de la persona.",
+    "palabras_clave": [
+      "inmediato",
+      "de inmediato",
+      "cambia",
+      "progresivo"
+    ],
+    "aplica_a": [
+      "seccion:amor",
+      "seccion:supremo",
+      "seccion:amarres"
+    ],
+    "emocion": "mistica",
+    "acciones": [],
+    "orden": 8
+  },
+  {
+    "clave": "vela-refuerzo",
+    "pregunta": "¿Para qué sirve la vela de refuerzo?",
+    "respuesta": "Tiene como propósito potenciar el trabajo, ya sea para acelerar sus efectos o, si ya surtió efecto, revitalizar su energía, porque con el tiempo puede perder intensidad. No es necesario repetir el mismo ritual sin antes hacer un refuerzo con la vela, y si el trabajo está tardando, puedes reforzarlo tantas veces como consideres necesario.",
+    "palabras_clave": [
+      "vela",
+      "refuerzo",
+      "velita",
+      "acelerar",
+      "potenciar"
+    ],
+    "aplica_a": [
+      "general",
+      "seccion:velas"
+    ],
+    "emocion": "mistica",
+    "acciones": [
+      {
+        "tipo": "catalogo",
+        "etiqueta": "Ver velas",
+        "seccion": "velas"
+      }
+    ],
+    "orden": 9
+  },
+  {
+    "clave": "personalizado-precio",
+    "pregunta": "¿Cuánto cuesta un ritual personalizado?",
+    "respuesta": "El precio final depende de la dificultad, los materiales y la carga energética del caso. Puedes consultarme sin compromiso y te doy una valoración honesta y detallada.",
+    "palabras_clave": [
+      "personalizado",
+      "a medida",
+      "precio personalizado",
+      "caso especial"
+    ],
+    "aplica_a": [
+      "general",
+      "seccion:personalizado"
+    ],
+    "emocion": "guino",
+    "acciones": [
+      {
+        "tipo": "catalogo",
+        "etiqueta": "Ver rituales personalizados",
+        "seccion": "personalizado"
+      }
+    ],
+    "orden": 10
+  },
+  {
+    "clave": "moneda",
+    "pregunta": "¿En qué moneda están los precios?",
+    "respuesta": "Los precios están en dólares (USD) y en pesos colombianos (COP).",
+    "palabras_clave": [
+      "moneda",
+      "dolares",
+      "pesos",
+      "usd",
+      "cop",
+      "precio"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 11
+  },
+  {
+    "clave": "estafas",
+    "pregunta": "Alguien me escribió diciendo ser Circe, ¿es real?",
+    "respuesta": "¡Cuidado! Yo nunca escribo primero y solo atiendo desde mi WhatsApp oficial. Si alguien te contactó usando mi nombre, repórtalo.",
+    "palabras_clave": [
+      "estafa",
+      "falso",
+      "fraude",
+      "me escribio",
+      "me contacto",
+      "perfil falso",
+      "suplantar"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "sorprendida",
+    "acciones": [
+      {
+        "tipo": "whatsapp",
+        "etiqueta": "Reportar perfil falso",
+        "mensaje": "Hola Circe, quiero reportar un perfil falso que usa tu nombre."
+      }
+    ],
+    "orden": 12
+  },
+  {
+    "clave": "obsesion-contacto",
+    "pregunta": "¿Funciona si ya no tenemos contacto?",
+    "respuesta": "Este trabajo es recomendable cuando aún existe comunicación y contacto, ya que esto facilita que los efectos se manifiesten más rápido.",
+    "palabras_clave": [
+      "contacto",
+      "no hablamos",
+      "comunicacion",
+      "bloqueado"
+    ],
+    "aplica_a": [
+      "servicio:obsesion"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 13
+  },
+  {
+    "clave": "retorno-sentimientos",
+    "pregunta": "¿El retorno cambia lo que siente por mí?",
+    "respuesta": "No. Este ritual únicamente facilita su regreso, sin alterar sus sentimientos o intenciones hacia ti. Si siente rabia, rencor o emociones negativas, regresará con esos mismos sentimientos; para que el retorno sea armonioso, lo ideal es combinarlo con otro ritual según tu caso.",
+    "palabras_clave": [
+      "sentimientos",
+      "rencor",
+      "rabia",
+      "armonioso",
+      "combinar"
+    ],
+    "aplica_a": [
+      "servicio:retorno"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 14
+  },
+  {
+    "clave": "vendaje-sentimientos",
+    "pregunta": "¿El vendaje de amor hace que me quiera más?",
+    "respuesta": "Ayuda con su fidelidad y exclusividad en la relación, pero no cambia los sentimientos existentes de la persona.",
+    "palabras_clave": [
+      "fidelidad",
+      "querer",
+      "sentimientos",
+      "infiel"
+    ],
+    "aplica_a": [
+      "servicio:vendaje-de-amor"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 15
+  },
+  {
+    "clave": "amarre-corazon-juntos",
+    "pregunta": "¿Se puede hacer si no estamos juntos?",
+    "respuesta": "Este amarre solo se realiza en parejas que están juntas.",
+    "palabras_clave": [
+      "juntos",
+      "separados",
+      "no estamos",
+      "pareja actual"
+    ],
+    "aplica_a": [
+      "servicio:amarre-de-corazon-con-las-siete-potencias-africanas"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 16
+  },
+  {
+    "clave": "sello-peticiones",
+    "pregunta": "¿Cuántas peticiones puedo agregar?",
+    "respuesta": "Puedes agregar hasta cinco peticiones personalizadas, enfocadas únicamente en tu relación.",
+    "palabras_clave": [
+      "peticiones",
+      "pedir",
+      "cuantas"
+    ],
+    "aplica_a": [
+      "servicio:sello-de-amor-con-retorno"
+    ],
+    "emocion": "guino",
+    "acciones": [],
+    "orden": 17
+  },
+  {
+    "clave": "abre-camino-amor-peticiones",
+    "pregunta": "¿Cuántas peticiones puedo hacer?",
+    "respuesta": "Tienes la oportunidad de pedir hasta 10 peticiones específicas, incluyendo cualidades emocionales y de carácter, y también rasgos físicos si así lo deseas.",
+    "palabras_clave": [
+      "peticiones",
+      "pedir",
+      "cuantas",
+      "rasgos"
+    ],
+    "aplica_a": [
+      "servicio:abre-camino-de-amor-supremo"
+    ],
+    "emocion": "guino",
+    "acciones": [],
+    "orden": 18
+  },
+  {
+    "clave": "novena-dias",
+    "pregunta": "¿Cuánto dura la novena?",
+    "respuesta": "Se trabaja durante nueve días consecutivos.",
+    "palabras_clave": [
+      "novena",
+      "dias",
+      "cuanto dura"
+    ],
+    "aplica_a": [
+      "servicio:novena-personalizada",
+      "servicio:novena-personalizada-de-la-prosperidad"
+    ],
+    "emocion": "mistica",
+    "acciones": [],
+    "orden": 19
+  },
+  {
+    "clave": "separacion-suprema-dias",
+    "pregunta": "¿Cuántos días dura la velación?",
+    "respuesta": "La velación se realiza durante siete días seguidos.",
+    "palabras_clave": [
+      "dias",
+      "velacion",
+      "cuanto dura"
+    ],
+    "aplica_a": [
+      "servicio:separacion-suprema"
+    ],
+    "emocion": "mistica",
+    "acciones": [],
+    "orden": 20
+  },
+  {
+    "clave": "laboral-accion",
+    "pregunta": "¿Tengo que hacer algo yo para conseguir trabajo?",
+    "respuesta": "Sí. La magia abre puertas, pero tú debes cruzarlas. Es fundamental que también tomes acción: busca, postula y muévete. La energía se alineará a tu favor, pero el esfuerzo es clave para que la oportunidad llegue y se materialice.",
+    "palabras_clave": [
+      "hacer algo",
+      "postular",
+      "accion",
+      "esfuerzo"
+    ],
+    "aplica_a": [
+      "servicio:abre-camino-laboral"
+    ],
+    "emocion": "guino",
+    "acciones": [],
+    "orden": 21
+  },
+  {
+    "clave": "suerte-garantia",
+    "pregunta": "¿Me garantiza que voy a ganar?",
+    "respuesta": "No garantiza ganancias fijas, pero sí maximiza tus posibilidades de éxito, abriendo caminos para que la suerte te favorezca en el momento justo.",
+    "palabras_clave": [
+      "ganar",
+      "garantiza",
+      "loteria",
+      "apuesta"
+    ],
+    "aplica_a": [
+      "servicio:suerte-rapida"
+    ],
+    "emocion": "guino",
+    "acciones": [],
+    "orden": 22
+  },
+  {
+    "clave": "salud-medico",
+    "pregunta": "¿Reemplaza al médico o al tratamiento?",
+    "respuesta": "No. Es un apoyo espiritual: no sustituye atención médica ni terapias, pero trabaja a nivel energético para aportar fuerza, equilibrio y bienestar.",
+    "palabras_clave": [
+      "medico",
+      "tratamiento",
+      "terapia",
+      "reemplaza"
+    ],
+    "aplica_a": [
+      "servicio:refuerzo-para-tu-salud",
+      "servicio:ritual-de-limpieza-mental"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 23
+  },
+  {
+    "clave": "amuletos-como",
+    "pregunta": "¿Cómo se hace la consagración?",
+    "respuesta": "Lo realizamos por videollamada, con los elementos que te indicaré.",
+    "palabras_clave": [
+      "como se hace",
+      "videollamada",
+      "elementos"
+    ],
+    "aplica_a": [
+      "servicio:consagracion-de-amuletos"
+    ],
+    "emocion": "feliz",
+    "acciones": [],
+    "orden": 24
+  },
+  {
+    "clave": "pocima-envio",
+    "pregunta": "¿Hacen envíos de la pócima?",
+    "respuesta": "Si estás en Colombia y así lo deseas, puedo hacerte el envío físico del frasco. Si te encuentras en otro país, lo entierro en una maceta especial, activando su poder de igual manera para que continúe cumpliendo su función sin perder efectividad.",
+    "palabras_clave": [
+      "envio",
+      "enviar",
+      "domicilio",
+      "frasco",
+      "colombia"
+    ],
+    "aplica_a": [
+      "general",
+      "servicio:pocima-perfecta"
+    ],
+    "emocion": "feliz",
+    "acciones": [],
+    "orden": 25
+  },
+  {
+    "clave": "vela-abundancia-intencion",
+    "pregunta": "¿Tengo que decirte mi intención?",
+    "respuesta": "Sí. Escríbeme tu intención para que la vela sea programada especialmente con tu energía.",
+    "palabras_clave": [
+      "intencion",
+      "programar",
+      "decir"
+    ],
+    "aplica_a": [
+      "servicio:vela-potencializadora-suprema-abundancia"
+    ],
+    "emocion": "mistica",
+    "acciones": [],
+    "orden": 26
+  },
+  {
+    "clave": "pendiente-tarot-precio",
+    "pregunta": "¿Cuánto cuesta y cuánto dura la lectura de tarot?",
+    "respuesta": "",
+    "palabras_clave": [
+      "tarot",
+      "lectura",
+      "precio",
+      "dura"
+    ],
+    "aplica_a": [
+      "general",
+      "seccion:tarot"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 27
+  },
+  {
+    "clave": "pendiente-lectura-descuento",
+    "pregunta": "¿La lectura previa se paga aparte o se descuenta del trabajo?",
+    "respuesta": "",
+    "palabras_clave": [
+      "lectura",
+      "aparte",
+      "descuenta"
+    ],
+    "aplica_a": [
+      "seccion:tarot",
+      "seccion:amor"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 28
+  },
+  {
+    "clave": "pendiente-horario",
+    "pregunta": "¿En qué horario respondes y en cuánto tiempo?",
+    "respuesta": "",
+    "palabras_clave": [
+      "horario",
+      "hora",
+      "responde",
+      "atiende"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 29
+  },
+  {
+    "clave": "pendiente-modalidad",
+    "pregunta": "¿Atiendes por chat, videollamada o en persona?",
+    "respuesta": "",
+    "palabras_clave": [
+      "videollamada",
+      "presencial",
+      "persona",
+      "ciudad",
+      "donde"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 30
+  },
+  {
+    "clave": "pendiente-datos",
+    "pregunta": "¿Qué datos necesitas de la persona?",
+    "respuesta": "",
+    "palabras_clave": [
+      "datos",
+      "nombre completo",
+      "fecha de nacimiento",
+      "foto"
+    ],
+    "aplica_a": [
+      "general",
+      "seccion:amor",
+      "seccion:amarres"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 31
+  },
+  {
+    "clave": "pendiente-sin-foto",
+    "pregunta": "¿Se puede hacer el trabajo sin foto de la persona?",
+    "respuesta": "",
+    "palabras_clave": [
+      "foto",
+      "sin foto",
+      "no tengo foto"
+    ],
+    "aplica_a": [
+      "seccion:amor",
+      "seccion:amarres",
+      "seccion:supremo"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 32
+  },
+  {
+    "clave": "pendiente-metodos-pago",
+    "pregunta": "¿Qué métodos de pago aceptas?",
+    "respuesta": "",
+    "palabras_clave": [
+      "metodo de pago",
+      "nequi",
+      "bancolombia",
+      "paypal",
+      "transferencia",
+      "tarjeta"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 33
+  },
+  {
+    "clave": "pendiente-abonos",
+    "pregunta": "¿Puedo pagar en partes o con abonos?",
+    "respuesta": "",
+    "palabras_clave": [
+      "abonos",
+      "partes",
+      "cuotas"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 34
+  },
+  {
+    "clave": "pendiente-inicio",
+    "pregunta": "¿Cuándo empiezas el ritual después del pago?",
+    "respuesta": "",
+    "palabras_clave": [
+      "empieza",
+      "inicia",
+      "cuando empiezas"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 35
+  },
+  {
+    "clave": "pendiente-evidencia",
+    "pregunta": "¿Envías fotos o videos del ritual?",
+    "respuesta": "",
+    "palabras_clave": [
+      "fotos",
+      "videos",
+      "evidencia",
+      "prueba"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 36
+  },
+  {
+    "clave": "pendiente-actualizaciones",
+    "pregunta": "¿Cada cuánto debo darte actualizaciones del avance?",
+    "respuesta": "",
+    "palabras_clave": [
+      "actualizaciones",
+      "avance",
+      "reportar"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 37
+  },
+  {
+    "clave": "pendiente-cuidados",
+    "pregunta": "¿Qué debo hacer o evitar mientras el trabajo está activo?",
+    "respuesta": "",
+    "palabras_clave": [
+      "evitar",
+      "cuidados",
+      "recomendaciones"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 38
+  },
+  {
+    "clave": "pendiente-combinar",
+    "pregunta": "¿Se pueden combinar dos de tus rituales a la vez?",
+    "respuesta": "",
+    "palabras_clave": [
+      "combinar",
+      "dos rituales",
+      "juntos"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 39
+  },
+  {
+    "clave": "pendiente-cuantas-velas",
+    "pregunta": "¿Cuántas velas de refuerzo recomiendas y cada cuánto?",
+    "respuesta": "",
+    "palabras_clave": [
+      "cuantas velas",
+      "cada cuanto"
+    ],
+    "aplica_a": [
+      "seccion:velas"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 40
+  },
+  {
+    "clave": "pendiente-casado",
+    "pregunta": "¿Funciona si la persona tiene pareja o está casada?",
+    "respuesta": "",
+    "palabras_clave": [
+      "casado",
+      "casada",
+      "tiene pareja",
+      "comprometido"
+    ],
+    "aplica_a": [
+      "seccion:amor",
+      "seccion:amarres",
+      "seccion:supremo"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 41
+  },
+  {
+    "clave": "pendiente-trabajo-previo",
+    "pregunta": "¿Funciona si a la persona ya le hicieron otro trabajo?",
+    "respuesta": "",
+    "palabras_clave": [
+      "otro trabajo",
+      "le hicieron",
+      "trabajada"
+    ],
+    "aplica_a": [
+      "seccion:amor",
+      "seccion:amarres"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 42
+  },
+  {
+    "clave": "pendiente-mismo-sexo",
+    "pregunta": "¿Trabajas con parejas del mismo sexo?",
+    "respuesta": "",
+    "palabras_clave": [
+      "mismo sexo",
+      "gay",
+      "lesbiana"
+    ],
+    "aplica_a": [
+      "seccion:amor",
+      "seccion:amarres"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 43
+  },
+  {
+    "clave": "pendiente-distancia",
+    "pregunta": "¿Funciona a distancia, si la persona vive en otro país?",
+    "respuesta": "",
+    "palabras_clave": [
+      "distancia",
+      "otro pais",
+      "extranjero",
+      "lejos"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 44
+  },
+  {
+    "clave": "pendiente-envios-productos",
+    "pregunta": "¿Envías pulseras y amuletos? ¿A dónde y cuánto cuesta?",
+    "respuesta": "",
+    "palabras_clave": [
+      "envio",
+      "pulseras",
+      "amuletos",
+      "costo envio"
+    ],
+    "aplica_a": [
+      "general"
+    ],
+    "emocion": "hablando",
+    "acciones": [],
+    "orden": 45
+  }
+]
