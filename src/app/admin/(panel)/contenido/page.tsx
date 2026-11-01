@@ -5,7 +5,7 @@ import contenidoBase from "@/data/contenido.json";
 import { exigirAdmin } from "@/lib/admin";
 
 const GRUPOS: { titulo: string; campos: [string, string, ("largo" | "corto")?][] }[] = [
-  { titulo: "Contacto y redes", campos: [["whatsapp", "WhatsApp (solo números, con código de país)"], ["whatsapp_visible", "WhatsApp como se muestra"], ["correo", "Correo"], ["instagram", "Instagram (enlace)"], ["tiktok", "TikTok (enlace)"], ["facebook", "Facebook (enlace)"]] },
+  { titulo: "Contacto y redes", campos: [["whatsapp", "WhatsApp (solo números, con código de país)"], ["whatsapp_visible", "WhatsApp como se muestra"], ["correo", "Correo"], ["instagram", "Instagram (enlace)"], ["tiktok", "TikTok (enlace)"]] },
   { titulo: "Inicio", campos: [["hero_saludo", "Saludo"], ["hero_titulo_1", "Titular, línea 1"], ["hero_titulo_2", "Titular, línea 2"], ["hero_titulo_3", "Titular, línea 3 (cursiva)"], ["hero_subtitulo", "Subtítulo", "largo"]] },
   { titulo: "¿Quién es Circe?", campos: [["circe_frase", "Frase"], ["circe_bio", "Biografía", "largo"], ["circe_anios", "Años de experiencia"]] },
   { titulo: "Chat", campos: [["chat_bienvenida", "Mensaje de bienvenida", "largo"], ["chat_sin_respuesta", "Cuando no encuentra respuesta", "largo"]] },

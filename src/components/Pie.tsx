@@ -5,7 +5,6 @@ export function Pie({ contenido }: { contenido: Contenido }) {
   const redes = [
     { href: contenido.instagram, label: "Instagram", d: <><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" /><circle cx="12" cy="12" r="4" /></> },
     { href: contenido.tiktok, label: "TikTok", d: <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.8 2.3 4.5 5 4.8" /> },
-    { href: contenido.facebook, label: "Facebook", d: <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" /> },
   ].filter((r) => r.href);
   return (
     <footer style={{ marginTop: "clamp(96px, 12vw, 160px)", background: "#080706", borderTop: "1px solid rgba(237,228,215,.08)" }}>
@@ -27,7 +26,6 @@ export function Pie({ contenido }: { contenido: Contenido }) {
           <Link href="/testimonios" className="flink">Testimonios</Link>
           <Link href="/#faq" className="flink">Preguntas frecuentes</Link>
           <Link href="/#contacto" className="flink">Contacto</Link>
-          <Link href="/admin" className="flink">Administración</Link>
         </nav>
       </div>
     </footer>
