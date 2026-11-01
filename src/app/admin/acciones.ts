@@ -159,3 +159,29 @@ export async function salir() {
   await db.auth.signOut();
   redirect("/admin/login");
 }
+
+// ---------- Preguntas de un servicio (desde el catálogo) ----------
+export async function guardarPreguntaServicio(form: FormData) {
+  const { db } = await exigirAdmin();
+  const id = texto(form.get("id"));
+  const itemId = texto(form.get("item_id"));
+  const slug = z.string().min(1).max(200).parse(texto(form.get("slug")));
+  const datos = {
+    pregunta: z.string().min(3).max(300).parse(texto(form.get("pregunta"))),
+    respuesta: z.string().max(2000).parse(texto(form.get("respuesta"))),
+    visible: form.get("visible") === "on",
+  };
+  const { error } = id
+    ? await db.from("preguntas").update(datos).eq("id", id)
+    : await db.from("preguntas").insert({ ...datos, aplica_a: [`servicio:${slug}`], emocion: "hablando" });
+  if (error) throw new Error(error.message);
+  publicar();
+  redirect(`/admin/catalogo?id=${itemId}&ok=preguntas#preguntas`);
+}
+
+export async function borrarPreguntaServicio(form: FormData) {
+  const { db } = await exigirAdmin();
+  await db.from("preguntas").delete().eq("id", texto(form.get("id")));
+  publicar();
+  redirect(`/admin/catalogo?id=${texto(form.get("item_id"))}#preguntas`);
+}

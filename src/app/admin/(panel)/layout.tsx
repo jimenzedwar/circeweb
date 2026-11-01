@@ -19,13 +19,13 @@ export default async function PanelLayout({ children }: { children: React.ReactN
   const { usuario } = await exigirAdmin();
   return (
     <div className="adm" style={{ minHeight: "100vh", display: "flex", flexWrap: "wrap", background: "var(--ink)", color: "var(--txt)" }}>
-      <aside className="adm-side" style={{ flex: "1 1 240px", color: "#EDE4D7", padding: "20px 14px", display: "flex", flexDirection: "column", gap: 22 }}>
+      <aside className="adm-side" style={{ flex: "1 1 240px", minWidth: 0, color: "#EDE4D7", padding: "20px 14px", display: "flex", flexDirection: "column", gap: 22 }}>
         <div style={{ padding: "0 10px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-            <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 24 }}>Circe <span style={{ fontStyle: "italic", color: "#B79A70" }}>Witch</span></span>
+            <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 24, whiteSpace: "nowrap" }}>Circe <span style={{ fontStyle: "italic", color: "#B79A70" }}>Witch</span></span>
             <span style={{ font: "600 10px Manrope, sans-serif", letterSpacing: ".2em", textTransform: "uppercase", color: "#A8A096" }}>Panel</span>
           </div>
-          <Link href="/" style={{ height: 36, display: "inline-flex", alignItems: "center", padding: "0 12px", border: "1px solid rgba(183,154,112,.4)", color: "#D9C9A8", textDecoration: "none", font: "600 12px Manrope, sans-serif", borderRadius: 999 }}>Ver sitio</Link>
+          <Link href="/" style={{ flex: "none", whiteSpace: "nowrap", height: 36, display: "inline-flex", alignItems: "center", padding: "0 12px", border: "1px solid rgba(183,154,112,.4)", color: "#D9C9A8", textDecoration: "none", font: "600 12px Manrope, sans-serif", borderRadius: 999 }}>Ver sitio</Link>
         </div>
         <MenuAdmin items={MENU} />
         <form action={salir} className="cw-desk" style={{ marginTop: "auto", padding: "12px 10px 0", borderTop: "1px solid rgba(237,228,215,.1)", flexDirection: "column", gap: 6, fontSize: 12, color: "#A8A096" }}>

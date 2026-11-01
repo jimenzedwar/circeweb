@@ -256,3 +256,6 @@ select.ain option{background:#151112;color:var(--txt)}
 .ok{background:rgba(80,170,120,.15);color:#9BD8B5}
 .ain{letter-spacing:0;text-transform:none}
 @media (max-width:899px){.adm-side{border-right:0;border-bottom:1px solid var(--line)}}
+.faq summary span{transition:transform .42s cubic-bezier(.2,.7,.2,1);display:inline-block}
+.faq[open]:not(.cerrando) summary span{transform:rotate(45deg)}
+.faq summary{transition:color .2s}.faq summary:hover{color:#F5EEE4}

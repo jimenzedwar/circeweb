@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Faq } from "@/components/Faq";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BotonChat, BotonSolicitar } from "@/components/botones";
@@ -151,7 +152,7 @@ export default async function PaginaServicio({ params }: Props) {
             <div className="shead rv"><span className="tag">Preguntas frecuentes</span>{titulo("Antes de", "pedirlo")}<BotonChat ctx={ctx} className="lnk">Preguntarle algo más a Circe</BotonChat></div>
             <div className="tile still rv" style={{ width: "100%", maxWidth: 860, margin: "0 auto", padding: "8px clamp(20px, 3vw, 40px)", display: "flex", flexDirection: "column" }}>
               {faqs.filter((f) => !f.id.startsWith("p-")).map((f) => (
-                <details key={f.id} className="faq"><summary>{f.pregunta} <span aria-hidden="true">+</span></summary><p>{f.respuesta}</p></details>
+                <Faq key={f.id} pregunta={f.pregunta} respuesta={f.respuesta} />
               ))}
             </div>
           </section>

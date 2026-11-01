@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Faq } from "@/components/Faq";
 import { BotonChat, BotonSolicitar, EnlaceSeccion, EnlaceWhatsapp } from "@/components/botones";
 import { Captura } from "@/components/Captura";
 import { Hero } from "@/components/Hero";
@@ -36,7 +37,6 @@ export default async function Inicio() {
             {c.circe_bio && <p style={{ margin: 0, fontSize: 16, lineHeight: 1.75, color: "#A8A096", whiteSpace: "pre-line" }}>{c.circe_bio}</p>}
             <dl style={{ margin: "8px 0 0", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(140px, 100%), 1fr))", gap: 12 }}>
               {c.circe_anios && <div style={{ display: "flex", flexDirection: "column-reverse", gap: 4 }}><dt style={{ fontSize: 12, color: "#A8A096" }}>de experiencia</dt><dd className="dsp grad" style={{ fontSize: "clamp(32px, 4vw, 48px)" }}>{c.circe_anios} años</dd></div>}
-              {c.circe_paises && <div style={{ display: "flex", flexDirection: "column-reverse", gap: 4 }}><dt style={{ fontSize: 12, color: "#A8A096" }}>atiende en</dt><dd className="dsp grad" style={{ fontSize: "clamp(32px, 4vw, 48px)" }}>{c.circe_paises}</dd></div>}
               <div style={{ display: "flex", flexDirection: "column-reverse", gap: 4 }}><dt style={{ fontSize: 12, color: "#A8A096" }}>escribe primero</dt><dd className="dsp grad" style={{ fontSize: "clamp(32px, 4vw, 48px)" }}>Nunca</dd></div>
             </dl>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 10 }}>
@@ -211,10 +211,7 @@ export default async function Inicio() {
           </div>
           <div className="tile still rv" style={{ maxWidth: 860, margin: "0 auto", padding: "8px clamp(20px, 3vw, 40px)", display: "flex", flexDirection: "column" }}>
             {faqs.map((f, i) => (
-              <details key={f.id} className="faq" open={i === 0}>
-                <summary>{f.pregunta} <span aria-hidden="true">+</span></summary>
-                <p>{f.respuesta}</p>
-              </details>
+              <Faq key={f.id} pregunta={f.pregunta} respuesta={f.respuesta} abierta={i === 0} />
             ))}
           </div>
         </div>
