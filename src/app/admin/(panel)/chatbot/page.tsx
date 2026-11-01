@@ -21,15 +21,15 @@ export default async function ChatbotAdmin({ searchParams }: { searchParams: Pro
   return (
     <>
       <Encabezado titulo="Chatbot de Circe" sub="Las respuestas del chat. Las que tienen respuesta vacía no se muestran.">
-        <Link href="/admin/chatbot?desde=" className="abtn" style={{ background: "#581F30", borderColor: "#581F30", color: "#FBF8F3" }}>+ Nueva respuesta</Link>
+        <Link href="/admin/chatbot?desde=" className="abtn aprim">+ Nueva respuesta</Link>
       </Encabezado>
       {p.ok && <div className="ok">Respuesta guardada.</div>}
-      <section className="acard" aria-label="Preguntas sin respuesta" style={{ borderRadius: 16, overflow: "hidden", borderColor: "#D9B7BF" }}>
-        <div style={{ display: "flex", flexDirection: "column", gap: 4, padding: "14px 20px" }}><h2 className="ah2">Preguntas sin respuesta</h2><span style={{ fontSize: 12, color: "#5E574F" }}>Lo que la gente escribió y el chat no supo responder</span></div>
-        {!pendientes?.length && <p style={{ margin: 0, padding: "0 20px 16px", fontSize: 13, color: "#8C8379" }}>Nada pendiente por ahora.</p>}
+      <section className="acard" aria-label="Preguntas sin respuesta" style={{ borderRadius: 16, overflow: "hidden", borderColor: "rgba(183,154,112,.45)" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 4, padding: "14px 20px" }}><h2 className="ah2">Preguntas sin respuesta</h2><span style={{ fontSize: 12, color: "#A8A096" }}>Lo que la gente escribió y el chat no supo responder</span></div>
+        {!pendientes?.length && <p style={{ margin: 0, padding: "0 20px 16px", fontSize: 13, color: "#8F877D" }}>Nada pendiente por ahora.</p>}
         {pendientes?.map((u) => (
-          <div key={u.id} style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "8px 16px", padding: "12px 20px", borderTop: "1px solid #E6DCCD" }}>
-            <span style={{ fontSize: 14, flex: "1 1 240px" }}>«{u.texto}» <span style={{ color: "#8C8379", fontSize: 12 }}>· {new Date(u.creado).toLocaleDateString("es-CO")}</span></span>
+          <div key={u.id} style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "8px 16px", padding: "12px 20px", borderTop: "1px solid rgba(237,228,215,.08)" }}>
+            <span style={{ fontSize: 14, flex: "1 1 240px" }}>«{u.texto}» <span style={{ color: "#8F877D", fontSize: 12 }}>· {new Date(u.creado).toLocaleDateString("es-CO")}</span></span>
             <div style={{ display: "flex", gap: 8 }}>
               <Link href={`/admin/chatbot?desde=${u.id}&texto=${encodeURIComponent(u.texto)}`} className="abtn">Crear respuesta</Link>
               <form action={descartarSinRespuesta}><input type="hidden" name="id" value={u.id} /><button className="abtn">Descartar</button></form>
@@ -40,15 +40,15 @@ export default async function ChatbotAdmin({ searchParams }: { searchParams: Pro
       <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "flex-start" }}>
         <section className="acard" aria-label="Respuestas" style={{ flex: "1 1 320px", minWidth: 0, borderRadius: 16, overflow: "hidden", maxHeight: "75vh", overflowY: "auto" }}>
           {preguntas?.map((x) => (
-            <Link key={x.id} href={`/admin/chatbot?id=${x.id}`} style={{ display: "flex", flexDirection: "column", gap: 4, padding: "12px 14px", borderTop: "1px solid #E6DCCD", textDecoration: "none", color: "#11100F", background: x.id === p.id ? "#EFE5D6" : "transparent", boxShadow: x.id === p.id ? "inset 3px 0 0 #581F30" : "none", opacity: x.visible && x.respuesta ? 1 : 0.55 }}>
+            <Link key={x.id} href={`/admin/chatbot?id=${x.id}`} style={{ display: "flex", flexDirection: "column", gap: 4, padding: "12px 14px", borderTop: "1px solid rgba(237,228,215,.08)", textDecoration: "none", color: "#EDE4D7", background: x.id === p.id ? "rgba(183,154,112,.1)" : "transparent", boxShadow: x.id === p.id ? "inset 3px 0 0 #B79A70" : "none", opacity: x.visible && x.respuesta ? 1 : 0.55 }}>
               <strong style={{ fontWeight: 600 }}>{x.pregunta}</strong>
-              <span style={{ fontSize: 12, color: "#5E574F" }}>{donde(x.aplica_a[0] ?? "general")}{x.respuesta ? "" : " · falta la respuesta"}</span>
+              <span style={{ fontSize: 12, color: "#A8A096" }}>{donde(x.aplica_a[0] ?? "general")}{x.respuesta ? "" : " · falta la respuesta"}</span>
             </Link>
           ))}
         </section>
         <section className="acard" aria-label="Editor" style={{ flex: "2 1 420px", minWidth: 0, padding: 20, borderRadius: 16 }}>
           {!editando ? (
-            <p style={{ margin: 0, color: "#5E574F" }}>Elige una respuesta para editarla o crea una nueva.</p>
+            <p style={{ margin: 0, color: "#A8A096" }}>Elige una respuesta para editarla o crea una nueva.</p>
           ) : (
             <form key={editando.id || "nueva"} action={guardarPregunta} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px, 100%), 1fr))", gap: 14 }}>
               <h2 className="ah2" style={{ gridColumn: "1 / -1" }}>{editando.id ? "Editar respuesta" : "Nueva respuesta"}</h2>
@@ -68,8 +68,8 @@ export default async function ChatbotAdmin({ searchParams }: { searchParams: Pro
                 <select name="emocion" className="ain" defaultValue={editando.emocion}>{EMOCIONES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select>
               </label>
               <label style={{ display: "flex", alignItems: "center", gap: 10, fontSize: 14 }}><input type="checkbox" name="visible" defaultChecked={editando.visible} style={{ width: 18, height: 18 }} />Visible en el chat</label>
-              <div style={{ gridColumn: "1 / -1", display: "flex", justifyContent: "flex-end", gap: 8, paddingTop: 12, borderTop: "1px solid #E6DCCD" }}>
-                <button className="abtn" style={{ background: "#581F30", borderColor: "#581F30", color: "#FBF8F3" }}>Guardar respuesta</button>
+              <div style={{ gridColumn: "1 / -1", display: "flex", justifyContent: "flex-end", gap: 8, paddingTop: 12, borderTop: "1px solid rgba(237,228,215,.08)" }}>
+                <button className="abtn aprim">Guardar respuesta</button>
               </div>
             </form>
           )}

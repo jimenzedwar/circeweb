@@ -227,3 +227,32 @@ img{max-width:100%;display:block}
 .login-err{margin:0;padding:12px 14px;border-radius:12px;background:rgba(138,43,59,.18);border:1px solid rgba(138,43,59,.45);color:#F1C9CF;font-size:13px;line-height:1.45}
 .btn:disabled{cursor:wait;transform:none}
 .login-in:-webkit-autofill,.login-in:-webkit-autofill:hover,.login-in:-webkit-autofill:focus{-webkit-text-fill-color:var(--txt);-webkit-box-shadow:0 0 0 1000px #17110F inset;caret-color:var(--txt);transition:background-color 9999s}
+
+/* ===== Panel de administración: mismo lenguaje oscuro del sitio ===== */
+.adm{background:var(--ink);color:var(--txt);color-scheme:dark}
+.adm-main{position:relative;isolation:isolate}
+.adm-main::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(50% 40% at 85% 0%,rgba(110,42,62,.28),transparent 70%),radial-gradient(40% 35% at 30% 100%,rgba(88,31,48,.18),transparent 70%)}
+.adm-side{background:linear-gradient(180deg,#151112 0%,#0F0D0C 100%)!important;border-right:1px solid var(--line)}
+.admlink.on,.admlink[aria-current="page"]{background:rgba(183,154,112,.12);color:#F5EEE4!important;box-shadow:inset 2px 0 0 var(--gold)}
+.adm h1{font-weight:300!important;letter-spacing:-.01em;background:linear-gradient(180deg,#FBF6EE 0%,#E9DCC4 60%,#B79A70 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.acard{background:linear-gradient(160deg,#1C1416 0%,#141011 60%,#110E0E 100%);border:1px solid var(--line);border-radius:20px;box-shadow:0 30px 60px -40px rgba(0,0,0,.8)}
+.ah2{color:var(--txt)}
+.apill{background:rgba(183,154,112,.14);color:var(--gold2)}
+.abtn{min-height:40px;padding:0 16px;border:1px solid rgba(237,228,215,.2);background:rgba(237,228,215,.04);color:var(--txt);border-radius:999px;transition:background .2s,border-color .2s}
+.abtn:hover{background:rgba(237,228,215,.1);border-color:rgba(237,228,215,.38)}
+.abtn.aprim{border:0;background:linear-gradient(180deg,#6E2A3E 0%,#581F30 100%);color:#F5EEE4;box-shadow:0 0 0 1px rgba(217,201,168,.35) inset,0 10px 26px -12px rgba(110,42,62,.9)}
+.abtn.aprim:hover{box-shadow:0 0 0 1px rgba(217,201,168,.6) inset,0 14px 32px -12px rgba(110,42,62,1)}
+.afl{color:var(--gold);letter-spacing:.06em}
+.ain{height:44px;padding:0 14px;border:1px solid rgba(237,228,215,.14);background:rgba(12,11,10,.55);border-radius:12px;color:var(--txt);transition:border-color .2s,box-shadow .2s}
+textarea.ain{height:auto;padding:12px 14px;line-height:1.5}
+.ain::placeholder{color:rgba(168,160,150,.55)}
+.ain:focus{outline:none;border-color:rgba(217,201,168,.55);box-shadow:0 0 0 4px rgba(183,154,112,.12)}
+select.ain option{background:#151112;color:var(--txt)}
+.adm input[type=checkbox]{accent-color:#B79A70}
+.adm input:focus,.adm textarea:focus{outline:none}
+.btrack{background:rgba(237,228,215,.07);border-radius:999px}
+.atabla td,.atabla th{border-top-color:var(--line)}
+.atabla th{color:var(--mut)}
+.ok{background:rgba(80,170,120,.15);color:#9BD8B5}
+.ain{letter-spacing:0;text-transform:none}
+@media (max-width:899px){.adm-side{border-right:0;border-bottom:1px solid var(--line)}}

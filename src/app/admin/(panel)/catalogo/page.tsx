@@ -25,7 +25,7 @@ export default async function CatalogoAdmin({ searchParams }: { searchParams: Pr
     <>
       <Encabezado titulo="Catálogo" sub="Servicios y productos. Lo que guardas aquí se ve en la web en pocos segundos.">
         <div style={{ display: "flex", gap: 8 }}>
-          <Link href="/admin/catalogo?nuevo=servicio" className="abtn" style={{ background: "#581F30", borderColor: "#581F30", color: "#FBF8F3" }}>+ Servicio</Link>
+          <Link href="/admin/catalogo?nuevo=servicio" className="abtn aprim">+ Servicio</Link>
           <Link href="/admin/catalogo?nuevo=producto" className="abtn">+ Producto</Link>
         </div>
       </Encabezado>
@@ -38,10 +38,10 @@ export default async function CatalogoAdmin({ searchParams }: { searchParams: Pr
           </form>
           <div style={{ maxHeight: "70vh", overflowY: "auto" }}>
             {lista.map((i) => (
-              <Link key={i.id} href={`/admin/catalogo?id=${i.id}${p.q ? `&q=${encodeURIComponent(p.q)}` : ""}`} style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) auto", gap: 12, alignItems: "center", padding: "12px 14px", borderTop: "1px solid #E6DCCD", textDecoration: "none", color: "#11100F", background: i.id === p.id ? "#EFE5D6" : "transparent", boxShadow: i.id === p.id ? "inset 3px 0 0 #581F30" : "none", opacity: i.visible ? 1 : 0.5 }}>
+              <Link key={i.id} href={`/admin/catalogo?id=${i.id}${p.q ? `&q=${encodeURIComponent(p.q)}` : ""}`} style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) auto", gap: 12, alignItems: "center", padding: "12px 14px", borderTop: "1px solid rgba(237,228,215,.08)", textDecoration: "none", color: "#EDE4D7", background: i.id === p.id ? "rgba(183,154,112,.1)" : "transparent", boxShadow: i.id === p.id ? "inset 3px 0 0 #B79A70" : "none", opacity: i.visible ? 1 : 0.5 }}>
                 <span style={{ minWidth: 0, display: "flex", flexDirection: "column", gap: 2 }}>
                   <strong style={{ fontWeight: 600 }}>{i.destacado ? "★ " : ""}{i.nombre}</strong>
-                  <span style={{ fontSize: 12, color: "#5E574F" }}>{i.tipo === "producto" ? "Producto · " : ""}{nombreGrupo.get(i.seccion) ?? i.seccion}{i.nivel ? ` · ${i.nivel}` : ""}{i.visible ? "" : " · oculto"}</span>
+                  <span style={{ fontSize: 12, color: "#A8A096" }}>{i.tipo === "producto" ? "Producto · " : ""}{nombreGrupo.get(i.seccion) ?? i.seccion}{i.nivel ? ` · ${i.nivel}` : ""}{i.visible ? "" : " · oculto"}</span>
                 </span>
                 <span style={{ fontSize: 13, fontWeight: 600 }}>{i.precio_texto || (i.precio_usd ? `${i.precio_usd} USD` : "—")}</span>
               </Link>
@@ -51,7 +51,7 @@ export default async function CatalogoAdmin({ searchParams }: { searchParams: Pr
 
         <section className="acard" aria-label="Editor" style={{ flex: "2 1 440px", minWidth: 0, padding: 20, display: "flex", flexDirection: "column", gap: 14, borderRadius: 16 }}>
           {!editando ? (
-            <p style={{ margin: 0, color: "#5E574F" }}>Elige un servicio o producto de la lista para editarlo.</p>
+            <p style={{ margin: 0, color: "#A8A096" }}>Elige un servicio o producto de la lista para editarlo.</p>
           ) : (
             <form key={editando.id || "nuevo"} action={guardarItem} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(200px, 100%), 1fr))", gap: 14 }}>
               <h2 className="ah2" style={{ gridColumn: "1 / -1" }}>{editando.id ? "Editar" : "Nuevo"} {editando.tipo === "producto" ? "producto" : "servicio"}</h2>
@@ -83,13 +83,13 @@ export default async function CatalogoAdmin({ searchParams }: { searchParams: Pr
                 <label style={{ display: "flex", alignItems: "center", gap: 10 }}><input type="checkbox" name="destacado" defaultChecked={editando.destacado} style={{ width: 18, height: 18 }} />En «Lo que más me piden»</label>
               </div>
               {editando.id && editando.tipo === "servicio" && (
-                <div style={{ gridColumn: "1 / -1", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 10, padding: "12px 14px", border: "1px solid #DCD1C2", background: "#FFFFFF", borderRadius: 10, fontSize: 13, color: "#5E574F" }}>
+                <div style={{ gridColumn: "1 / -1", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 10, padding: "12px 14px", border: "1px solid rgba(237,228,215,.12)", background: "rgba(12,11,10,.45)", borderRadius: 10, fontSize: 13, color: "#A8A096" }}>
                   <span>{capturas ?? 0} capturas de WhatsApp ancladas a este servicio</span>
                   <Link href={`/admin/testimonios?item=${editando.id}`} className="abtn">Subir captura</Link>
                 </div>
               )}
-              <div style={{ gridColumn: "1 / -1", display: "flex", justifyContent: "flex-end", paddingTop: 12, borderTop: "1px solid #E6DCCD" }}>
-                <button className="abtn" style={{ background: "#581F30", borderColor: "#581F30", color: "#FBF8F3" }}>Guardar cambios</button>
+              <div style={{ gridColumn: "1 / -1", display: "flex", justifyContent: "flex-end", paddingTop: 12, borderTop: "1px solid rgba(237,228,215,.08)" }}>
+                <button className="abtn aprim">Guardar cambios</button>
               </div>
             </form>
           )}

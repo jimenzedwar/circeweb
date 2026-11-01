@@ -19,11 +19,11 @@ export default async function ContenidoAdmin({ searchParams }: { searchParams: P
   return (
     <form action={guardarContenido} style={{ display: "flex", flexDirection: "column", gap: 18 }}>
       <Encabezado titulo="Contenido del sitio" sub="Textos, contacto, fotos y avisos que se muestran en la web.">
-        <button className="abtn" style={{ height: 46, padding: "0 22px", background: "#581F30", borderColor: "#581F30", color: "#FBF8F3" }}>Guardar cambios</button>
+        <button className="abtn aprim" style={{ height: 46, padding: "0 22px" }}>Guardar cambios</button>
       </Encabezado>
       {ok && <div className="ok">Contenido actualizado.</div>}
       <section className="acard" style={{ padding: 20, display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "12px 24px", borderRadius: 16 }}>
-        <div style={{ flex: "1 1 280px", display: "flex", flexDirection: "column", gap: 4 }}><h2 className="ah2">Agenda llena</h2><span style={{ fontSize: 13, color: "#5E574F" }}>Muestra un aviso arriba y los botones invitan a la lista de espera.</span></div>
+        <div style={{ flex: "1 1 280px", display: "flex", flexDirection: "column", gap: 4 }}><h2 className="ah2">Agenda llena</h2><span style={{ fontSize: 13, color: "#A8A096" }}>Muestra un aviso arriba y los botones invitan a la lista de espera.</span></div>
         <label style={{ display: "flex", alignItems: "center", gap: 10, font: "600 14px Manrope, sans-serif" }}><input type="checkbox" name="c_agenda_llena" value="true" defaultChecked={c.agenda_llena === "true"} style={{ width: 20, height: 20 }} />Activar aviso</label>
       </section>
       <section className="acard" style={{ padding: 20, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(260px, 100%), 1fr))", gap: 16, borderRadius: 16 }}>

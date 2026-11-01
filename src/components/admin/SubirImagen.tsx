@@ -25,11 +25,11 @@ export function SubirImagen({ nombre, valor = "", carpeta, etiqueta, vertical = 
     <div className="afl">
       {etiqueta}
       <input type="hidden" name={nombre} value={url} />
-      <label style={{ position: "relative", minHeight: vertical ? 300 : 120, display: "grid", placeItems: "center", gap: 8, padding: 14, border: "1.5px dashed #CFC3B2", borderRadius: 16, background: "#FFFFFF", textAlign: "center", fontWeight: 400, fontSize: 13, color: "#5E574F", cursor: "pointer", overflow: "hidden" }}>
-        {url ? <img src={url} alt="" style={{ maxHeight: vertical ? 300 : 160, borderRadius: 10, objectFit: "contain" }} /> : <span><strong style={{ color: "#11100F" }}>Subir imagen</strong><br />Arrastra o haz clic</span>}
+      <label style={{ position: "relative", minHeight: vertical ? 300 : 120, display: "grid", placeItems: "center", gap: 8, padding: 14, border: "1.5px dashed rgba(237,228,215,.18)", borderRadius: 16, background: "rgba(12,11,10,.45)", textAlign: "center", fontWeight: 400, fontSize: 13, color: "#A8A096", cursor: "pointer", overflow: "hidden" }}>
+        {url ? <img src={url} alt="" style={{ maxHeight: vertical ? 300 : 160, borderRadius: 10, objectFit: "contain" }} /> : <span><strong style={{ color: "#EDE4D7" }}>Subir imagen</strong><br />Arrastra o haz clic</span>}
         <input type="file" accept="image/*" className="sr" onChange={(e) => e.target.files?.[0] && subir(e.target.files[0])} />
       </label>
-      {estado && <span style={{ fontWeight: 400, color: "#8A2B3B" }}>{estado}</span>}
+      {estado && <span style={{ fontWeight: 400, color: "#F1C9CF" }}>{estado}</span>}
       {url && <button type="button" className="abtn" style={{ alignSelf: "flex-start", minHeight: 32 }} onClick={() => setUrl("")}>Quitar imagen</button>}
     </div>
   );
