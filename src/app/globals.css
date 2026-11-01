@@ -226,3 +226,4 @@ img{max-width:100%;display:block}
 .login-in:focus{outline:none;border-color:rgba(217,201,168,.55);box-shadow:0 0 0 4px rgba(183,154,112,.12)}
 .login-err{margin:0;padding:12px 14px;border-radius:12px;background:rgba(138,43,59,.18);border:1px solid rgba(138,43,59,.45);color:#F1C9CF;font-size:13px;line-height:1.45}
 .btn:disabled{cursor:wait;transform:none}
+.login-in:-webkit-autofill,.login-in:-webkit-autofill:hover,.login-in:-webkit-autofill:focus{-webkit-text-fill-color:var(--txt);-webkit-box-shadow:0 0 0 1000px #17110F inset;caret-color:var(--txt);transition:background-color 9999s}

@@ -14,7 +14,7 @@ Web de Circe: catálogo de rituales con búsqueda inteligente, chatbot sin IA, s
    3. Authentication → Users → *Add user* con el correo y contraseña de la administradora.
    4. SQL Editor → `insert into public.admins (user_id) select id from auth.users where email = 'CORREO-DE-LA-ADMIN';`
 2. **Local**: `cp .env.example .env.local`, completa las dos claves de Supabase y ejecuta `npm install` y `npm run dev`.
-3. **Vercel**: importa el repositorio de GitHub y agrega las mismas variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL` con la URL final).
+3. **Vercel**: importa el repositorio de GitHub y agrega las mismas variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_SITE_URL` con la URL final).
 4. En Supabase → Authentication → URL Configuration, pon la URL del sitio.
 
 ## Dónde se edita cada cosa (panel `/admin`)
